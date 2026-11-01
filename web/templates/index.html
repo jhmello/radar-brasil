@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<section>
+  <h1 class="titulo-secao">Painel do país</h1>
+  <p class="sub">Números oficiais, atualizados diariamente. Sem interpretação, só o dado.</p>
+  <div class="cards">
+  {% for s in series %}
+    {% set r = s.resumo %}
+    <article class="card">
+      <h2>{{ s.nome }}</h2>
+      {% if r %}
+        {% set casas = 4 if s.id == 'dolar_ptax' else 2 %}
+        <div class="valor">{{ r.valor|num(casas) }} <small>{{ s.unidade }}</small></div>
+        <div class="meta">{{ r.data|data_br }} · {{ s.fonte }}</div>
+        <dl class="comp">
+          <div><dt>1 mês antes</dt><dd>{{ r.ha_1_mes.valor|num(casas) if r.ha_1_mes else '—' }}</dd></div>
+          <div><dt>1 ano antes</dt><dd>{{ r.ha_1_ano.valor|num(casas) if r.ha_1_ano else '—' }}</dd></div>
+        </dl>
+        <canvas class="spark" data-serie="{{ s.id }}" height="56" aria-label="Histórico de {{ s.nome }}" role="img"></canvas>
+      {% else %}
+        <div class="valor vazio">sem dados</div>
+        <div class="meta">aguardando a primeira coleta</div>
+      {% endif %}
+    </article>
+  {% endfor %}
+  </div>
+</section>
+
+<section class="bloco">
+  <h2 class="titulo-secao">Expectativas do mercado</h2>
+  <p class="sub">Boletim Focus: mediana das projeções de analistas consultados pelo Banco Central. É expectativa, não garantia.</p>
+  <div class="tabela">{{ focus_html|safe }}</div>
+</section>
+
+<section class="bloco">
+  <h2 class="titulo-secao">Edição mais recente</h2>
+  {% if ultimo %}
+    <p><a class="botao" href="relatorios/{{ ultimo.slug }}.html">Ler: {{ ultimo.titulo }}</a></p>
+  {% else %}
+    <p class="sub">Nenhum boletim gerado ainda. Rode o workflow com a opção "Gerar relatório agora".</p>
+  {% endif %}
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const SERIES = {{ graficos_json|safe }};
+const cor = getComputedStyle(document.documentElement).getPropertyValue('--acento').trim() || '#2f6f5e';
+document.querySelectorAll('canvas.spark').forEach(c => {
+  const pts = SERIES[c.dataset.serie] || [];
+  if (!pts.length) return;
+  new Chart(c, {
+    type: 'line',
+    data: { labels: pts.map(p => p.data), datasets: [{ data: pts.map(p => p.valor),
+      borderColor: cor, borderWidth: 1.6, pointRadius: 0, tension: 0.25, fill: false }] },
+    options: { responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: { legend: { display: false }, tooltip: { intersect: false, mode: 'index',
+        callbacks: { title: i => i[0].label.split('-').reverse().join('/') } } },
+      scales: { x: { display: false }, y: { display: false } } }
+  });
+});
+</script>
+{% endblock %}

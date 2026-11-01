@@ -1,0 +1,72 @@
+# Feeds RSS de notícias.
+#
+# O objetivo NÃO é achar "a fonte certa", e sim EQUILÍBRIO: colocar lado a lado
+# veículos de linhas editoriais diferentes para que a análise mostre onde eles
+# concordam (provavelmente fato) e onde divergem (provavelmente interpretação).
+#
+# perfil: rótulo livre, usado só para agrupar. Ajuste como achar justo.
+# tema:   brasil | economia | mundo
+#
+# Feeds mudam de endereço com o tempo. A página "Status" do site mostra
+# quais falharam na última coleta; basta corrigir a URL aqui.
+
+feeds:
+  # Institucionais / públicos
+  - nome: Agência Brasil
+    url: https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml
+    perfil: estatal
+    tema: brasil
+  - nome: Agência Câmara
+    url: https://www.camara.leg.br/noticias/rss/ultimas-noticias
+    perfil: institucional
+    tema: brasil
+  - nome: Agência Senado
+    url: https://www12.senado.leg.br/noticias/feed/todasasnoticias/feed.xml
+    perfil: institucional
+    tema: brasil
+
+  # Grande imprensa
+  - nome: G1 Economia
+    url: https://g1.globo.com/rss/g1/economia/
+    perfil: grande imprensa
+    tema: economia
+  - nome: G1 Política
+    url: https://g1.globo.com/rss/g1/politica/
+    perfil: grande imprensa
+    tema: brasil
+  - nome: Folha Mercado
+    url: https://feeds.folha.uol.com.br/mercado/rss091.xml
+    perfil: grande imprensa
+    tema: economia
+  - nome: Folha Poder
+    url: https://feeds.folha.uol.com.br/poder/rss091.xml
+    perfil: grande imprensa
+    tema: brasil
+
+  # Independentes / de linha editorial declarada
+  - nome: Poder360
+    url: https://www.poder360.com.br/feed/
+    perfil: independente
+    tema: brasil
+  - nome: CartaCapital
+    url: https://www.cartacapital.com.br/feed/
+    perfil: progressista
+    tema: brasil
+  - nome: Revista Oeste
+    url: https://revistaoeste.com/feed/
+    perfil: conservador
+    tema: brasil
+
+  # Internacional
+  - nome: BBC News Brasil
+    url: https://feeds.bbci.co.uk/portuguese/rss.xml
+    perfil: internacional
+    tema: mundo
+  - nome: DW Brasil
+    url: https://rss.dw.com/xml/rss-br-all
+    perfil: internacional
+    tema: mundo
+  - nome: ONU News
+    url: https://news.un.org/feed/subscribe/pt/news/all/rss.xml
+    perfil: institucional
+    tema: mundo

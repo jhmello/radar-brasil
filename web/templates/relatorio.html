@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block titulo %}{{ r.titulo }}{% endblock %}
+{% block conteudo %}
+<article class="relatorio">
+{{ r.html|safe }}
+</article>
+{% endblock %}

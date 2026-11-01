@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block titulo %}Status das fontes — Radar Brasil{% endblock %}
+{% block conteudo %}
+<h1 class="titulo-secao">Status das fontes</h1>
+<p class="sub">Resultado da última coleta. Fontes com erro costumam ser feeds que mudaram de endereço: corrija em <code>config/fontes.yml</code>.</p>
+{% if status.fontes %}
+<div class="tabela"><table>
+  <thead><tr><th>Fonte</th><th>Situação</th><th>Detalhe</th></tr></thead>
+  <tbody>
+  {% for nome, f in status.fontes.items() %}
+    <tr><td>{{ nome }}</td><td class="{{ 'ok' if f.ok else 'erro' }}">{{ 'ok' if f.ok else 'erro' }}</td><td>{{ f.detalhe }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+{% else %}
+<p class="sub">Nenhuma coleta registrada ainda.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titulo %}Radar Brasil{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ raiz }}/static/style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="{{ raiz }}/index.html">Radar<span>Brasil</span></a>
+    <nav>
+      <a href="{{ raiz }}/index.html">Painel</a>
+      <a href="{{ raiz }}/arquivo.html">Edições ({{ n_relatorios }})</a>
+      <a href="{{ raiz }}/status.html">Status</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{% block conteudo %}{% endblock %}
+</main>
+<footer class="wrap rodape">
+  Dados: Banco Central (SGS, Focus), IBGE e manchetes de veículos de linhas editoriais diferentes.
+  Análise gerada por IA: confira os números e as fontes.
+  {% if status.executado_em %}<br>Última coleta: {{ status.executado_em[:16].replace('T', ' ') }} UTC.{% endif %}
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

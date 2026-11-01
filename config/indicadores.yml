@@ -1,0 +1,59 @@
+# Séries do SGS (Sistema Gerenciador de Séries Temporais do Banco Central).
+# Várias são produzidas pelo IBGE e espelhadas no SGS, o que simplifica a coleta.
+# Para adicionar uma série: procure o código em https://www3.bcb.gov.br/sgspub
+# e acrescente um item abaixo. "historico_dias" define a janela baixada a cada coleta.
+
+series:
+  - id: selic_meta
+    nome: Selic (meta)
+    codigo: 432
+    unidade: "% a.a."
+    fonte: Banco Central
+    historico_dias: 1100
+
+  - id: dolar_ptax
+    nome: Dólar (PTAX venda)
+    codigo: 1
+    unidade: "R$"
+    fonte: Banco Central
+    historico_dias: 400
+
+  - id: ipca_mensal
+    nome: IPCA (variação mensal)
+    codigo: 433
+    unidade: "%"
+    fonte: IBGE
+    historico_dias: 1100
+
+  - id: ipca_12m
+    nome: IPCA (acumulado 12 meses)
+    codigo: 13522
+    unidade: "%"
+    fonte: IBGE
+    historico_dias: 1100
+
+  - id: desemprego
+    nome: Taxa de desocupação (PNAD Contínua)
+    codigo: 24369
+    unidade: "%"
+    fonte: IBGE
+    historico_dias: 1100
+
+  - id: ibc_br
+    nome: IBC-Br (prévia do PIB, dessazonalizado)
+    codigo: 24364
+    unidade: "índice"
+    fonte: Banco Central
+    historico_dias: 1100
+
+  - id: divida_bruta
+    nome: Dívida bruta do governo geral
+    codigo: 13762
+    unidade: "% do PIB"
+    fonte: Banco Central
+    historico_dias: 1100
+
+# Boletim Focus: mediana das projeções do mercado, coletada pelo Banco Central.
+focus:
+  indicadores: ["IPCA", "PIB Total", "Câmbio", "Selic"]
+  anos_a_frente: 2   # ano corrente + próximo
