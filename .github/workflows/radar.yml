@@ -43,10 +43,11 @@ jobs:
       - name: Gerar boletim semanal
         if: github.event.schedule == '47 9 * * 1' || inputs.relatorio
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || 'openai/gpt-4.1' }}
+          LLM_PROVIDER: openai-compatible
+          LLM_BASE_URL: https://generativelanguage.googleapis.com/v1beta/openai
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemini-2.5-flash' }}
         run: python -m radar.analysis.relatorio
-
       - name: Salvar no repositório
         run: |
           mkdir -p data relatorios
