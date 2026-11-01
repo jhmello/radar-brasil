@@ -1,0 +1,89 @@
+{
+ "executado_em": "2026-11-01T21:42:51.636993+00:00",
+ "fontes": {
+  "sgs:selic_meta": {
+   "ok": true,
+   "detalhe": "1101 pontos"
+  },
+  "sgs:dolar_ptax": {
+   "ok": true,
+   "detalhe": "274 pontos"
+  },
+  "sgs:ipca_mensal": {
+   "ok": true,
+   "detalhe": "36 pontos"
+  },
+  "sgs:ipca_12m": {
+   "ok": true,
+   "detalhe": "36 pontos"
+  },
+  "sgs:desemprego": {
+   "ok": true,
+   "detalhe": "36 pontos"
+  },
+  "sgs:ibc_br": {
+   "ok": true,
+   "detalhe": "35 pontos"
+  },
+  "sgs:divida_bruta": {
+   "ok": true,
+   "detalhe": "36 pontos"
+  },
+  "focus": {
+   "ok": true,
+   "detalhe": ""
+  },
+  "rss:Agência Brasil": {
+   "ok": true,
+   "detalhe": "10 itens"
+  },
+  "rss:Agência Câmara": {
+   "ok": true,
+   "detalhe": "20 itens"
+  },
+  "rss:Agência Senado": {
+   "ok": false,
+   "detalhe": "404 Client Error: Not Found for url: https://www12.senado.leg.br/noticias/feed/todasasnoticias/feed.xml"
+  },
+  "rss:G1 Economia": {
+   "ok": true,
+   "detalhe": "40 itens"
+  },
+  "rss:G1 Política": {
+   "ok": true,
+   "detalhe": "40 itens"
+  },
+  "rss:Folha Mercado": {
+   "ok": true,
+   "detalhe": "40 itens"
+  },
+  "rss:Folha Poder": {
+   "ok": true,
+   "detalhe": "40 itens"
+  },
+  "rss:Poder360": {
+   "ok": true,
+   "detalhe": "10 itens"
+  },
+  "rss:CartaCapital": {
+   "ok": true,
+   "detalhe": "20 itens"
+  },
+  "rss:Revista Oeste": {
+   "ok": true,
+   "detalhe": "10 itens"
+  },
+  "rss:BBC News Brasil": {
+   "ok": true,
+   "detalhe": "31 itens"
+  },
+  "rss:DW Brasil": {
+   "ok": true,
+   "detalhe": "40 itens"
+  },
+  "rss:ONU News": {
+   "ok": true,
+   "detalhe": "30 itens"
+  }
+ }
+}
