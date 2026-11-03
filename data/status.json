@@ -1,5 +1,5 @@
 {
- "executado_em": "2026-11-02T19:50:34.771355+00:00",
+ "executado_em": "2026-11-03T17:04:23.052125+00:00",
  "fontes": {
   "sgs:selic_meta": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "sgs:dolar_ptax": {
    "ok": true,
-   "detalhe": "274 pontos"
+   "detalhe": "275 pontos"
   },
   "sgs:ipca_mensal": {
    "ok": true,
@@ -75,7 +75,7 @@
   },
   "rss:BBC News Brasil": {
    "ok": true,
-   "detalhe": "31 itens"
+   "detalhe": "36 itens"
   },
   "rss:DW Brasil": {
    "ok": true,
