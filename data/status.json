@@ -1,5 +1,5 @@
 {
- "executado_em": "2026-11-03T17:04:23.052125+00:00",
+ "executado_em": "2026-11-04T17:15:25.245085+00:00",
  "fontes": {
   "sgs:selic_meta": {
    "ok": true,
@@ -75,7 +75,7 @@
   },
   "rss:BBC News Brasil": {
    "ok": true,
-   "detalhe": "36 itens"
+   "detalhe": "40 itens"
   },
   "rss:DW Brasil": {
    "ok": true,
