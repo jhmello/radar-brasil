@@ -1,5 +1,5 @@
 {
- "executado_em": "2026-11-11T17:08:07.488133+00:00",
+ "executado_em": "2026-11-12T17:36:33.495884+00:00",
  "fontes": {
   "sgs:selic_meta": {
    "ok": true,
@@ -11,11 +11,11 @@
   },
   "sgs:ipca_mensal": {
    "ok": true,
-   "detalhe": "35 pontos"
+   "detalhe": "36 pontos"
   },
   "sgs:ipca_12m": {
    "ok": true,
-   "detalhe": "35 pontos"
+   "detalhe": "36 pontos"
   },
   "sgs:desemprego": {
    "ok": true,
@@ -75,7 +75,7 @@
   },
   "rss:BBC News Brasil": {
    "ok": true,
-   "detalhe": "31 itens"
+   "detalhe": "30 itens"
   },
   "rss:DW Brasil": {
    "ok": true,
