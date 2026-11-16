@@ -1,5 +1,5 @@
 {
- "executado_em": "2026-11-15T16:22:34.175786+00:00",
+ "executado_em": "2026-11-16T19:36:58.163715+00:00",
  "fontes": {
   "sgs:selic_meta": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "sgs:dolar_ptax": {
    "ok": true,
-   "detalhe": "273 pontos"
+   "detalhe": "274 pontos"
   },
   "sgs:ipca_mensal": {
    "ok": true,
@@ -23,7 +23,7 @@
   },
   "sgs:ibc_br": {
    "ok": true,
-   "detalhe": "34 pontos"
+   "detalhe": "35 pontos"
   },
   "sgs:divida_bruta": {
    "ok": true,
@@ -38,8 +38,8 @@
    "detalhe": "10 itens"
   },
   "rss:Agência Câmara": {
-   "ok": false,
-   "detalhe": "HTTPSConnectionPool(host='www.camara.leg.br', port=443): Max retries exceeded with url: /noticias/rss/ultimas-noticias (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.camara.leg.br', port=443) at 0x7f311ebdc620>, 'Connection to www.camara.leg.br timed out. (connect timeout=25)'))"
+   "ok": true,
+   "detalhe": "20 itens"
   },
   "rss:Agência Senado": {
    "ok": false,
