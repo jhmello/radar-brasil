@@ -1,5 +1,5 @@
 {
- "executado_em": "2026-11-16T19:53:47.783091+00:00",
+ "executado_em": "2026-11-17T18:35:09.236934+00:00",
  "fontes": {
   "sgs:selic_meta": {
    "ok": true,
@@ -7,7 +7,7 @@
   },
   "sgs:dolar_ptax": {
    "ok": true,
-   "detalhe": "274 pontos"
+   "detalhe": "275 pontos"
   },
   "sgs:ipca_mensal": {
    "ok": true,
