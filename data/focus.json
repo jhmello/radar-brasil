@@ -2,136 +2,136 @@
  "IPCA": {
   "2026": {
    "atual": {
-    "data": "2026-11-13",
-    "mediana": 5.1082,
+    "data": "2026-11-19",
+    "mediana": 5.1505,
     "minimo": 4.7481,
-    "maximo": 5.8005,
-    "respondentes": 146
+    "maximo": 5.6427,
+    "respondentes": 147
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
-    "mediana": 5.219,
-    "minimo": 4.5,
+    "data": "2026-10-22",
+    "mediana": 5.2141,
+    "minimo": 4.8,
     "maximo": 5.875,
-    "respondentes": 137
+    "respondentes": 116
    }
   },
   "2027": {
    "atual": {
-    "data": "2026-11-13",
-    "mediana": 5.0,
+    "data": "2026-11-19",
+    "mediana": 5.1214,
     "minimo": 3.5046,
-    "maximo": 6.46,
+    "maximo": 6.5002,
     "respondentes": 146
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
-    "mediana": 4.3206,
+    "data": "2026-10-22",
+    "mediana": 4.2984,
     "minimo": 3.1418,
     "maximo": 6.0,
-    "respondentes": 137
+    "respondentes": 116
    }
   }
  },
  "PIB Total": {
   "2026": {
    "atual": {
-    "data": "2026-11-13",
-    "mediana": 1.7215,
-    "minimo": 1.2515,
+    "data": "2026-11-19",
+    "mediana": 1.7018,
+    "minimo": 1.4273,
     "maximo": 2.2825,
     "respondentes": 119
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
-    "mediana": 1.8301,
+    "data": "2026-10-22",
+    "mediana": 1.8177,
     "minimo": 1.3797,
     "maximo": 2.2825,
-    "respondentes": 105
+    "respondentes": 93
    }
   },
   "2027": {
    "atual": {
-    "data": "2026-11-13",
-    "mediana": 1.0224,
+    "data": "2026-11-19",
+    "mediana": 0.9995,
     "minimo": -0.3315,
     "maximo": 2.3755,
     "respondentes": 118
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
+    "data": "2026-10-22",
     "mediana": 1.3246,
     "minimo": 0.2933,
     "maximo": 2.3755,
-    "respondentes": 105
+    "respondentes": 93
    }
   }
  },
  "Câmbio": {
   "2026": {
    "atual": {
-    "data": "2026-11-13",
-    "mediana": 5.4,
+    "data": "2026-11-19",
+    "mediana": 5.55,
     "minimo": 4.9,
     "maximo": 6.0,
     "respondentes": 121
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
-    "mediana": 5.132,
+    "data": "2026-10-22",
+    "mediana": 5.1,
     "minimo": 4.5,
     "maximo": 5.45,
-    "respondentes": 104
+    "respondentes": 90
    }
   },
   "2027": {
    "atual": {
-    "data": "2026-11-13",
-    "mediana": 5.45,
-    "minimo": 4.7,
+    "data": "2026-11-19",
+    "mediana": 5.5,
+    "minimo": 4.8,
     "maximo": 6.3,
     "respondentes": 120
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
-    "mediana": 5.2213,
-    "minimo": 4.6,
+    "data": "2026-10-22",
+    "mediana": 5.2,
+    "minimo": 4.5,
     "maximo": 5.6,
-    "respondentes": 103
+    "respondentes": 89
    }
   }
  },
  "Selic": {
   "2026": {
    "atual": {
-    "data": "2026-11-13",
+    "data": "2026-11-19",
     "mediana": 13.75,
     "minimo": 13.25,
     "maximo": 13.75,
-    "respondentes": 144
+    "respondentes": 145
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
+    "data": "2026-10-22",
     "mediana": 13.25,
     "minimo": 13.0,
     "maximo": 14.0,
-    "respondentes": 133
+    "respondentes": 121
    }
   },
   "2027": {
    "atual": {
-    "data": "2026-11-13",
-    "mediana": 12.75,
-    "minimo": 10.25,
+    "data": "2026-11-19",
+    "mediana": 13.0,
+    "minimo": 10.5,
     "maximo": 15.0,
     "respondentes": 144
    },
    "quatro_semanas_antes": {
-    "data": "2026-10-16",
+    "data": "2026-10-22",
     "mediana": 12.0,
-    "minimo": 9.75,
+    "minimo": 9.0,
     "maximo": 14.0,
-    "respondentes": 132
+    "respondentes": 120
    }
   }
  }
