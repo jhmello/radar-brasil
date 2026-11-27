@@ -1,5 +1,5 @@
 {
- "executado_em": "2026-11-26T19:00:18.847987+00:00",
+ "executado_em": "2026-11-27T18:59:56.574651+00:00",
  "fontes": {
   "sgs:selic_meta": {
    "ok": true,
@@ -19,7 +19,7 @@
   },
   "sgs:desemprego": {
    "ok": true,
-   "detalhe": "35 pontos"
+   "detalhe": "36 pontos"
   },
   "sgs:ibc_br": {
    "ok": true,
